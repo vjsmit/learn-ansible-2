@@ -1,0 +1,8 @@
+- name: Demo on Variables
+  hosts: localhost
+  connection: local
+  vars:
+    URL: www.example.com
+  tasks:
+    ansible.builtin.debug:
+      msg: URL - {{ URL }}
