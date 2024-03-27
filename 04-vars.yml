@@ -6,4 +6,4 @@
   tasks:
     - name: Accesing vars
       ansible.builtin.debug:
-        msg: URL - {{ URL }}
+        msg: URL is {{ URL }}
