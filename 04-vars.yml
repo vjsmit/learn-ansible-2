@@ -7,3 +7,4 @@
     - name: Accesing vars
       ansible.builtin.debug:
         msg: URL is {{ URL }}
+
