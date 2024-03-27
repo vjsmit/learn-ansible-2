@@ -4,5 +4,6 @@
   vars:
     URL: www.example.com
   tasks:
-    ansible.builtin.debug:
-      msg: URL - {{ URL }}
+    - name: Accesing vars
+      ansible.builtin.debug:
+        msg: URL - {{ URL }}
