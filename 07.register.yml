@@ -8,4 +8,4 @@
 
     - name: Print register value
       ansible.builtin.debug:
-        msg: "{{ output.stdout | split(" ") }}"
+        msg: "{{ output.stdout | split(' ') }}"
