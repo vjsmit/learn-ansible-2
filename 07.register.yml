@@ -8,4 +8,4 @@
 
     - name: Print register value
       ansible.builtin.debug:
-        msg: uptime is {{ uptime }}
+        msg: uptime is {{ output }}
