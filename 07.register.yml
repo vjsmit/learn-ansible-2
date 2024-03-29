@@ -2,7 +2,7 @@
   hosts: localhost
   connection: local
   tasks:
-    - name: Printing uptime
+    - name: Storing uptime
       ansible.builtin.shell: uptime
       register: output
 
