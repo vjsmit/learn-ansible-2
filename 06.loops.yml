@@ -11,3 +11,13 @@
         - guava
         - grapes
         - oranges
+
+    - name: Print fruit name with quantity
+      ansible.builtin.debug:
+        msg: Fruit name is {{ item.name }} & Quantity is {{ item.quantity }}
+      loop:
+        - { name: Apple, quantity: 10 kg }
+        - { name: Blueberry, quantity: 1 kg }
+        - { name: Guava, quantity: 2 kg }
+        - { name: Grapes, quantity: 2 kg }
+        - { name: Oranges, quantity: 5 kg }
