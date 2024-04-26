@@ -6,7 +6,8 @@
 #        msg: Hello World
 
 - name: Demo Playbook
-  hosts: all
+  hosts: localhost
+  connection: local
   tasks:
     - name: Print Hello World
       ansible.builtin.debug:
